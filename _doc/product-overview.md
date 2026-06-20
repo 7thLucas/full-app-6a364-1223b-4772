@@ -21,11 +21,29 @@ A purpose-built weightbridge app that:
 3. Stores a complete, searchable digital log accessible to supervisors at any time.
 4. Generates weight transaction reports for audit, billing, or compliance use.
 
+## Weighbridge Transaction Logic
+
+### Transaction Types
+Every weighbridge transaction is one of two types, selected by the operator BEFORE the first weighing — because the sequence determines which reading is labelled Bruto vs. Tara:
+
+| Type | First Weight | Second Weight | Netto |
+|---|---|---|---|
+| **Receiving** | Bruto (Gross) | Tara (Tare) | Bruto − Tara |
+| **Dispatch / Sales** | Tara (Tare) | Bruto (Gross) | Bruto − Tara |
+
+- The operator selects the transaction type at the start; this controls the form flow and labels.
+- **Vehicle number (plate number)** must be recorded on every transaction.
+- **Netto = Bruto − Tara** in all cases, regardless of type.
+
+This logic directly governs the weight entry form: the type selection gates the first weighing step, and field labels (Bruto / Tara) are shown according to which sequence applies.
+
 ## Key Features (MVP)
-- Vehicle weight entry form (gross weight in, tare weight out, net calculation)
+- Weight entry form with type selection (Receiving or Dispatch / Sales) before first weighing; field labels adapt to sequence
+- Vehicle plate number recorded on every transaction
+- Automatic Netto calculation (Bruto − Tara) regardless of transaction type
 - Vehicle & driver registration / quick-select
 - Timestamp and operator ID captured per transaction
-- Transaction history log (searchable, filterable)
+- Transaction history log (searchable, filterable by type, date, vehicle)
 - Daily / date-range report export
 - Dashboard summary (total vehicles today, total tonnage, pending transactions)
 
