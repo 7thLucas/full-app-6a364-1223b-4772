@@ -49,6 +49,19 @@ When the operator selects **Receiving** and proceeds to the first weighing step,
 
 **On save:** the system records that the vehicle has entered the facility and is ready for unloading (pembongkaran). This is the **first save** that creates the open transaction — a two-step record that will be completed by the second weighing (Tara) later.
 
+### Second Weighing Form — Receiving Mode (Tara / Berat Kosong Entry)
+
+After the vehicle has been unloaded (pembongkaran), it returns to the weighbridge for the second weighing:
+
+1. **Tara weight (Berat Kosong)** — the weight of the empty truck/lorry captured from the weight indicator. The indicator must be stable (not moving) before saving.
+2. **On save:** the system completes the transaction — Netto is auto-calculated (Bruto − Tara), the transaction record is closed.
+3. **Print out:** a weight ticket / slip timbang is generated and printed automatically after save. This serves as the official proof of delivery and exit clearance.
+4. **Vehicle exits:** the vehicle is cleared to leave the facility once the slip is printed.
+
+**Complete Receiving Transaction Lifecycle:**
+- Step 1: Vehicle arrives → First weighing (Bruto) → fields: Vendor, FDO, Plate, Driver, Bruto weight → Save → vehicle enters for unloading
+- Step 2: Vehicle returns empty → Second weighing (Tara/Berat Kosong) → Save → Netto calculated → Print slip → Vehicle exits
+
 ## Key Features (MVP)
 - Weight entry form with type selection (Receiving or Dispatch / Sales) before first weighing; field labels adapt to sequence
 - Vehicle plate number recorded on every transaction
