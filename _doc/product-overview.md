@@ -37,6 +37,18 @@ Every weighbridge transaction is one of two types, selected by the operator BEFO
 
 This logic directly governs the weight entry form: the type selection gates the first weighing step, and field labels (Bruto / Tara) are shown according to which sequence applies.
 
+### First Weighing Form — Receiving Mode (Bruto Entry)
+
+When the operator selects **Receiving** and proceeds to the first weighing step, the following fields are required:
+
+1. **Vendor name** — the vendor/supplier the incoming vehicle is coming from.
+2. **FDO number** — Receiving Delivery Order number; the document reference for this delivery.
+3. **Vehicle plate number (No. Plat)** — the truck or lorry's registration plate.
+4. **Driver name (Nama Supir)** — the name of the driver operating the vehicle.
+5. **Bruto weight** — the gross weight captured from the weight indicator. The indicator must be in a **stable (not moving) state** before the value can be captured or saved; the form must enforce this and prevent saving while the indicator is still fluctuating.
+
+**On save:** the system records that the vehicle has entered the facility and is ready for unloading (pembongkaran). This is the **first save** that creates the open transaction — a two-step record that will be completed by the second weighing (Tara) later.
+
 ## Key Features (MVP)
 - Weight entry form with type selection (Receiving or Dispatch / Sales) before first weighing; field labels adapt to sequence
 - Vehicle plate number recorded on every transaction
