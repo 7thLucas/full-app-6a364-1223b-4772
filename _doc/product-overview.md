@@ -1,4 +1,4 @@
-# Product Overview — WeighBridge Manager
+# Product Overview — WBMS (WeighBridge Management System)
 
 ## What It Is
 A weightbridge management web app for manufacturing companies to record, track, and audit the weight of every vehicle entering and leaving the facility. Every transaction is captured digitally — replacing paper logs, manual spreadsheets, and informal records — so the company always has an accurate, timestamped weight ledger.
