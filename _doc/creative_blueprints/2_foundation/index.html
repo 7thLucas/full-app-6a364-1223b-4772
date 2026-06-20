@@ -1,0 +1,102 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-bold uppercase tracking-widest text-amber-500">The Challenge & The Fix</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Why Paper Logs Don't Cut It</h2>
+    </div>
+
+    <!-- Two-column body -->
+    <div class="sl-layout flex flex-1 min-h-0">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col gap-4">
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center">
+            <span class="text-red-600 text-xs font-bold">✕</span>
+          </div>
+          <span class="text-sm font-bold text-red-700 uppercase tracking-wide">The Problem</span>
+        </div>
+
+        <div class="bg-red-50 border border-red-100 rounded-2xl p-5 flex-1 flex flex-col gap-4">
+          <img
+            src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=messy%20paper%20logbook%20with%20handwritten%20numbers%20on%20industrial%20desk%2C%20cluttered%2C%20stressed%20worker%2C%20manufacturing%20setting%2C%20dim%20lighting"
+            alt="Paper log problem"
+            class="w-full h-28 object-cover rounded-xl opacity-80"
+          />
+          <ul class="flex flex-col gap-3">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 w-5 h-5 rounded-full bg-red-200 text-red-700 flex-shrink-0 flex items-center justify-center text-xs font-bold">!</span>
+              <div>
+                <p class="text-sm font-semibold text-slate-800">Lost & illegible records</p>
+                <p class="text-xs text-slate-500">Handwritten logs get damaged, misfiled, or simply unreadable at audit time.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 w-5 h-5 rounded-full bg-red-200 text-red-700 flex-shrink-0 flex items-center justify-center text-xs font-bold">!</span>
+              <div>
+                <p class="text-sm font-semibold text-slate-800">No real-time visibility</p>
+                <p class="text-xs text-slate-500">Supervisors only know what happened after manually sifting through paper.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 w-5 h-5 rounded-full bg-red-200 text-red-700 flex-shrink-0 flex items-center justify-center text-xs font-bold">!</span>
+              <div>
+                <p class="text-sm font-semibold text-slate-800">Audit & compliance risk</p>
+                <p class="text-xs text-slate-500">Incomplete weight logs expose the facility to disputes and regulatory gaps.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col gap-4">
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center">
+            <span class="text-emerald-600 text-xs font-bold">✓</span>
+          </div>
+          <span class="text-sm font-bold text-emerald-700 uppercase tracking-wide">The Solution</span>
+        </div>
+
+        <div class="bg-slate-900 rounded-2xl p-5 flex-1 flex flex-col gap-4">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-start gap-3">
+              <span class="mt-0.5 w-7 h-7 rounded-xl bg-amber-500 flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">1</span>
+              <div>
+                <p class="text-sm font-semibold text-white">Capture every vehicle in seconds</p>
+                <p class="text-xs text-slate-400">Operators log gross weight, tare, and net in one quick form — under 60 seconds per transaction.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-0.5 w-7 h-7 rounded-xl bg-amber-500 flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">2</span>
+              <div>
+                <p class="text-sm font-semibold text-white">Timestamped, searchable digital log</p>
+                <p class="text-xs text-slate-400">Every entry is permanently stored with operator ID, vehicle, driver, and commodity — instantly searchable.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-0.5 w-7 h-7 rounded-xl bg-amber-500 flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">3</span>
+              <div>
+                <p class="text-sm font-semibold text-white">Reports on demand</p>
+                <p class="text-xs text-slate-400">Supervisors pull daily or date-range reports for audit, billing, or compliance — no operator needed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-auto pt-3 border-t border-white/10">
+            <p class="text-xs text-amber-400 font-semibold">WeighBridge Manager — built for the factory gate, trusted by management.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
