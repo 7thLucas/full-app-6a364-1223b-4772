@@ -69,6 +69,7 @@ After the vehicle has been unloaded (pembongkaran), it returns to the weighbridg
 - Vehicle & driver registration / quick-select
 - Timestamp and operator ID captured per transaction
 - Transaction history log (searchable, filterable by type, date, vehicle)
+- Weight ticket / slip timbang print (auto-generated on second weighing save; serves as proof of delivery and exit clearance)
 - Daily / date-range report export
 - Dashboard summary (total vehicles today, total tonnage, pending transactions)
 
