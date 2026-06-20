@@ -77,7 +77,7 @@ After the vehicle has been unloaded (pembongkaran), it returns to the weighbridg
 A straightforward, reliable operational tool built for the factory floor and the manager's desk. Not a complex ERP — a focused, fast weightbridge log that just works.
 
 ## Brand & Tone
-- Name: **WeighBridge Manager** (working title — to be confirmed)
+- Name: **WBMS** (WeighBridge Management System — confirmed)
 - Tone: Professional, precise, industrial-operational. Clear labels, no jargon, built for non-technical gate staff.
 - Color direction: industrial/industrial-clean — deep slate or navy primary, amber or orange accent for alert/action states.
 
