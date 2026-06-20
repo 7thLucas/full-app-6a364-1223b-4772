@@ -1,0 +1,74 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-landscape .sl-roi { flex-direction: row; }
+  .mode-portrait .sl-roi { flex-direction: column; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold uppercase tracking-widest text-amber-500">Why It Matters</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Measurable Operational Value</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-grid grid gap-4 mb-5">
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Speed</p>
+        <p class="text-3xl font-black text-slate-900">&lt;60s</p>
+        <p class="text-xs text-slate-500 mt-1">per weight transaction — operators capture in/out in one quick form</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Accuracy</p>
+        <p class="text-3xl font-black text-slate-900">Zero</p>
+        <p class="text-xs text-slate-500 mt-1">missed transactions — every vehicle movement captured and stored automatically</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Audit Readiness</p>
+        <p class="text-3xl font-black text-slate-900">Instant</p>
+        <p class="text-xs text-slate-500 mt-1">report generation for any date range — no manual log reconciliation</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Visibility</p>
+        <p class="text-3xl font-black text-slate-900">Live</p>
+        <p class="text-xs text-slate-500 mt-1">dashboard for supervisors — total tonnage and vehicle counts at all times</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Accountability</p>
+        <p class="text-3xl font-black text-slate-900">Full</p>
+        <p class="text-xs text-slate-500 mt-1">operator ID and timestamp on every entry — immutable audit trail</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Access</p>
+        <p class="text-3xl font-black text-slate-900">Any device</p>
+        <p class="text-xs text-slate-500 mt-1">tablet-optimised for gate operators, desktop-ready for managers</p>
+      </div>
+
+    </div>
+
+    <!-- ROI Summary block -->
+    <div class="sl-roi flex bg-slate-900 rounded-2xl p-5 gap-5 mt-auto">
+      <div class="flex-1">
+        <p class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-1">ROI Summary</p>
+        <p class="text-white font-semibold text-sm leading-relaxed">
+          Replacing paper logs eliminates hours of manual reconciliation, prevents costly weight disputes, and ensures every tonne is accounted for — protecting revenue and meeting compliance requirements without adding headcount.
+        </p>
+      </div>
+      <div class="flex-shrink-0 flex flex-col justify-center text-right">
+        <p class="text-slate-400 text-xs font-medium">Operational risk eliminated</p>
+        <p class="text-4xl font-black text-amber-400">100%</p>
+        <p class="text-slate-400 text-xs">of weight data digitised</p>
+      </div>
+    </div>
+
+  </div>
+</section>
