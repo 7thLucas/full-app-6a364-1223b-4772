@@ -4,8 +4,8 @@
 A weightbridge management web app for manufacturing companies to record, track, and audit the weight of every vehicle entering and leaving the facility. Every transaction is captured digitally — replacing paper logs, manual spreadsheets, and informal records — so the company always has an accurate, timestamped weight ledger.
 
 ## Users / Personas
-- **Weighbridge Operators** — gate staff who capture incoming and outgoing vehicle weight readings in real time.
-- **Supervisors / Plant Managers** — review daily and historical weight logs, spot discrepancies, and run reports.
+- **WB Operator** (Weighbridge Operator) — gate staff who perform weight entry transactions.
+- **Supervisor** — has separate access for monitoring and reporting.
 
 ## Core Problem
 Manufacturing facilities receive and dispatch large volumes of goods by vehicle (trucks, lorries). Without a digital system, weight entries are recorded on paper or in ad-hoc spreadsheets, leading to:
